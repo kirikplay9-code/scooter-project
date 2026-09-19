@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Java / Maven
+backend/target/
+backend/.idea/
+backend/*.iml
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# VS Code
+.vscode/
+
+# Env / секреты
+.env

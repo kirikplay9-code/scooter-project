@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самокаты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container wide">
+    <h1>Доступные самокаты</h1>
+
+    <div id="active-block" class="active-rental hidden">
+        <h2>🟡 Активная аренда</h2>
+        <div id="active-info"></div>
+        <button class="danger" onclick="endRental()">Завершить аренду</button>
+    </div>
+
+    <div id="scooters-list" class="cards"></div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/scooters.js"></script>
+</body>
+</html>

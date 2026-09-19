@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда самокатов</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>🛴 Аренда самокатов</h1>
+
+    <div class="tabs">
+        <button id="tab-login" class="tab active" onclick="showTab('login')">Вход</button>
+        <button id="tab-register" class="tab" onclick="showTab('register')">Регистрация</button>
+    </div>
+
+    <div id="login-form" class="form-block">
+        <h2>Вход</h2>
+        <input type="text" id="login-login" placeholder="Логин">
+        <input type="password" id="login-password" placeholder="Пароль">
+        <button onclick="doLogin()">Войти</button>
+        <div id="login-error" class="error"></div>
+    </div>
+
+    <div id="register-form" class="form-block hidden">
+        <h2>Регистрация</h2>
+        <input type="text" id="reg-login" placeholder="Логин">
+        <input type="password" id="reg-password" placeholder="Пароль (мин. 6 символов)">
+        <input type="text" id="reg-fullname" placeholder="ФИО">
+        <input type="text" id="reg-phone" placeholder="Телефон (+71234567890)">
+        <input type="email" id="reg-email" placeholder="Email">
+        <button onclick="doRegister()">Зарегистрироваться</button>
+        <div id="register-error" class="error"></div>
+    </div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
