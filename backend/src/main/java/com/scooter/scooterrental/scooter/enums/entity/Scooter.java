@@ -8,7 +8,7 @@ import lombok.Setter;
 import java.util.UUID;
 
 @Entity
-@Table(name = "Самокаты")
+@Table(name = "scooters")
 @Getter @Setter @NoArgsConstructor
 public class Scooter {
     @Id
@@ -21,7 +21,7 @@ public class Scooter {
     private String model;
     private Double latitude;
     private Double longitude;
-    private Integer batteryLevel; // 0-100
+    private Integer batteryLevel;
 
     @Enumerated(EnumType.STRING)
     private ScooterStatus status = ScooterStatus.AVAILABLE;
