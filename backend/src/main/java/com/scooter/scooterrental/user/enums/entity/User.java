@@ -21,7 +21,7 @@ public class User {
     private String login;
 
     @Column(nullable = false)
-    private String password;   // храним хеш
+    private String password;
 
     @Column(nullable = false)
     private String fullName;

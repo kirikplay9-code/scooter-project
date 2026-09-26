@@ -1,17 +1,18 @@
 package com.scooter.scooterrental.user.enums.service;
 
 import com.scooter.scooterrental.common.exception.*;
-import com.scooter.scooterrental.user.enums.dto.*;
+import com.scooter.scooterrental.user.enums.UserRole;
+import com.scooter.scooterrental.user.enums.dto.UserLoginDto;
+import com.scooter.scooterrental.user.enums.dto.UserRegistrationDto;
+import com.scooter.scooterrental.user.enums.dto.UserResponseDto;
 import com.scooter.scooterrental.user.enums.entity.Role;
 import com.scooter.scooterrental.user.enums.entity.User;
-import com.scooter.scooterrental.user.enums.UserRole;
 import com.scooter.scooterrental.user.enums.repository.RoleRepository;
 import com.scooter.scooterrental.user.enums.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
 import java.util.UUID;
 
 @Service
